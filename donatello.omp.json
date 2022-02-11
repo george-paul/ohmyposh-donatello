@@ -1,0 +1,92 @@
+// donatello
+// built on "honukai"
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "type": "time",
+          "style": "plain",
+          "foreground": "#ffffff",
+          "properties": {
+            "prefix": " ╭─[",
+            "postfix": "]"
+          }
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "session",
+          "style": "plain",
+          "foreground": "#FFFFFF",
+          "properties": {
+            "prefix": " <#56028e># </>",
+            "template": "<#0377C8>{{ .UserName }}</> at \n"
+          }
+        },
+        {
+          "type": "path",
+          "style": "plain",
+          "foreground": "#0973C0",
+          "properties": {
+            "prefix": "<#FFFFFF>╰─ </>",
+            "folder_icon": "\uF115",
+            "folder_separator_icon": " \uE0B1 ",
+            "style": "agnoster_short",
+            "max_depth": 3,
+            "enable_hyperlink": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "type": "root",
+          "style": "plain",
+          "foreground": "#CECE04",
+          "properties": {
+            "prefix": ""
+          }
+        },
+        {
+          "type": "python",
+          "style": "plain",
+          "foreground": "#100e23",
+          "properties": {
+            "prefix": "\uE235 "
+          }
+        },
+        {
+          "type": "exit",
+          "style": "plain",
+          "foreground": "#CB4B16",
+          "properties": {
+            "template": "{{ .Text }}"
+          }
+        },
+        {
+          "type": "text",
+          "style": "plain",
+          "foreground": "#56028e",
+          "properties": {
+            "prefix": "",
+            "text": ">"
+          }
+        }
+      ]
+    }
+  ],
+  "final_space": true
+}
